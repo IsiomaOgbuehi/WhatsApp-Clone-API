@@ -5,7 +5,8 @@ mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true, 
   useUnifiedTopology: true, 
   useCreateIndex : true, 
-  useFindAndModify : false
+  useFindAndModify : false,
+  family: 4
   })
 
 mongoose.connection.once('open', () => { 
